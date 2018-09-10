@@ -1,0 +1,119 @@
+#Unix commands
+
+pwd - To print current working directory
+-------------------
+File Operation:
+
+touch filename - To create zero byte file
+
+cat filename - To read the file
+
+cat >filename -To write in the file(overwrites the previous contents of file), allow to write in the terminal itself. We can create multiple files using this command.
+
+cat >>filename -To append in the file without overwriting on it.
+
+mv old_filename new_filename -To rename the filename
+
+cp file1 file2 -To copy the file1 into file2.
+
+rm filename -To remove the file
+-------------
+Directory operations:
+
+mkdir directory_name -To create directory
+
+rmdir directory_name -To remove directory
+-------------
+Navigating through directory:
+
+cd path -For forward navigation
+
+cd .. -For backward navigation
+----------------
+For searching:
+
+grep phrase filename -To search particular phrasein file
+-----------------
+List the files:
+
+ls       -To list out the files and directories
+ls -l    -To list out the files and directories with details
+ls -a    -To list out the files and directories with hidden directories also
+ls -la   -To list out the files and directories with everything
+----------------
+To find the Differences:
+
+diff file1 file2   -To findout the differences present in the file
+----------------
+To change the permissions:
+
+
+-   / d               ###		    ###		      ###
+
+file/ directory		owner/user:u  group:g   Other peoples:o
+
+
+read             :r ->4
+write            :w ->2
+execute          :x ->1
+No permissions   :- ->0
+
+chmod o-w filename     ------>To remove write permission from other
+chmod 0+w filenama     ------>To give write permissionto other
+
+chmod 777 filename     ------->Everyone get all the permission
+chmod 754 filename     ------->user(4+2+1) group(4+1) other(4)
+----------------
+Compress and decompress:
+
+zip filename          -To zip the file
+unzip filename.zip    -To unzip the file
+
+tar cvf filename.tar file1 file2      -Here filename.tar represents destination
+tar xvf filename.tar                  -To extraxt the files
+
+[c-create v-view on terminal f-file options x-extract file]
+----------------
+Process related:
+ps           -To list all the running processes
+ps -elf      -To list all the running process with details
+kill pid     -To kill the process[here status would be terminated]
+kill -9 pid  -To kill the process forcefully[status is killed]
+----------------
+logname       -log in of user
+uname         -os name
+uname -r      -kernel version of os
+hostname      -To show the hostname or server name
+hostname -i   -To show ip address
+who           -To list all the users connected to server
+tty           -Displays current terminal name
+---------------
+su            -Login as root
+sudo passwd   -set root password
+exit          -exit
+---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
